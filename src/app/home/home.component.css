@@ -1,0 +1,174 @@
+.mycontainer{
+  display: flex;
+  height: 680px;
+  width: 70%;
+  border-radius: 15px;
+  border: 0px solid black;
+  margin: auto;
+  margin-top: 35px;
+  margin-left: 230px;
+  box-shadow: 10px 10px 50px #b8b7b7;
+}
+.mat-sidenav-container{
+  width: 100%;
+  border-radius: 15px;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.mat-sidenav{
+  width: 200px;
+  background-color: rgb(105, 206, 149);
+}
+.mat-sidenav-content{
+  padding: 20px 40px;
+  background-color: white;
+}
+#sidelogo{
+  height: 90px;
+  width: 250px;
+  float: right;
+  padding: 0px;
+  left: 5px;
+  margin-right: 3px;
+}
+#circle{
+  padding-top: 220px;
+}
+.dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.dot2{
+  height: 15px;
+  width: 15px;
+  background-color: rgb(167, 166, 166);
+  border-radius: 50%;
+  display: flex;
+  margin: auto; 
+}
+h1{
+  font-size: 30px;
+  font-family: 'Baloo Chettan 2', cursive;
+  color:rgb(88, 168, 123) ;
+  padding-top: 30px;
+}
+#img1{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(105, 206, 149);
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+#img2{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  background-color: rgb(105, 206, 149);
+  transform: rotate(180deg);
+  margin-bottom: 50px;
+  cursor: pointer;
+  margin-top: 200px;  
+}
+li{
+  list-style: none;
+}
+
+#startup{
+  font-size: large;
+  padding-top: 20px;
+}
+#startupinput{
+  width: 100%;
+  font-size: 15px;
+}
+
+#ind{
+  font-size: large;
+  padding-top: 20px;
+}
+#indinput{
+  width: 377px;
+  font-size: 15px;
+}
+#sec{
+  font-size: large;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+#secinput{
+  width: 377px;
+  font-size: 15px;
+}
+#indsec{
+  display: flex;
+  flex-direction: row;
+}
+#stage{
+  font-size: large;
+  padding-top: 20px;
+}
+#stageinput{
+  margin-top: 10px;
+  width: 377px;
+  font-size: 16px;
+}
+#stage2{
+  margin-left: 80px;
+  height: 40px;  
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+#stage2a,#stage2b{
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-left: 30px;
+  font-family: 'Baloo Chettan 2', cursive;
+  margin-top: 20px;
+}
+#textarea{
+  border: 1px solid black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  width: 375px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#stagetext{
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+#interests{
+  font-size: large;
+  padding-top: 10px;
+}
+.mat-checkbox{
+  font-size: 15px;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+#continue{
+  float: right;
+  margin-right: 20px;
+  height: 34px;
+  border-radius: 20px;
+  background-color: rgb(88, 168, 123);
+  color: aliceblue;
+}
+.mat-button-toggle-checked{
+  background-color: rgb(88, 168, 123);
+  color: white;
+
+}

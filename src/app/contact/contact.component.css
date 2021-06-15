@@ -1,0 +1,116 @@
+.mycontainer{
+  display: flex;
+  height: 680px;
+  width: 70%;
+  border-radius: 15px;
+  border: 0px solid black;
+  margin: auto;
+  margin-top: 35px;
+  margin-left: 230px;
+  box-shadow: 10px 10px 50px #b8b7b7;
+}
+.mat-sidenav-container{
+  width: 100%;
+  border-radius: 15px;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.mat-sidenav{
+  width: 200px;
+  background-color: rgb(105, 206, 149);
+}
+.mat-sidenav-content{
+  padding: 20px 40px;
+  background-color: white;
+}
+#sidelogo{
+  height: 90px;
+  width: 250px;
+  float: right;
+  padding: 0px;
+  left: 5px;
+  margin-right: 3px;
+}
+#circle{
+  padding-top: 220px;
+}
+.dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(167, 166, 166);
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.dot2{
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  margin: auto; 
+}
+h1{
+  font-size: 30px;
+  font-family: 'Baloo Chettan 2', cursive;
+  color:rgb(88, 168, 123) ;
+  padding-top: 30px;
+}
+#img1{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(105, 206, 149);
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+#img2{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  background-color: rgb(105, 206, 149);
+  transform: rotate(180deg);
+  margin-bottom: 50px;
+  cursor: pointer;
+  margin-top: 200px;  
+}
+#firstname{
+  font-size: large;
+  padding-top: 10px;
+}
+#firstnameinput{
+  width: 370px;
+  font-size: 15px;
+}
+#lastname{
+  font-size: large;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+#lastnameinput{
+  width: 370px;
+  font-size: 15px;
+}
+#firstlast{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#submit{
+  float: right;
+  margin-right: 20px;
+  height: 34px;
+  border-radius: 20px;
+  background-color: rgb(88, 168, 123);
+  color: aliceblue;
+  margin-top: 92px;
+  height: 35px;
+  width: 80px;
+}
+#logo{
+  font-size: large;
+  padding-top: 10px;
+  font-family: 'Baloo Chettan 2', cursive;
+}

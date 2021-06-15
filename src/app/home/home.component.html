@@ -1,0 +1,78 @@
+<div class="mycontainer">
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <img id="img1" routerLink='/home' src="https://www.freeiconspng.com/uploads/black-circle-arrow-up-icon-31.png"
+        alt="">
+      <div id="circle">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+      </div>
+      <img id="img2" routerLink='/contact' src="https://www.freeiconspng.com/uploads/black-circle-arrow-up-icon-31.png"
+        alt="">
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh_sALHdEjpDivsXaPG52E3voex6HFkZZppMIuCvFeM390TNhHT-0Gp0GIzb9v0pT81M&usqp=CAU"
+        id="sidelogo" alt="">
+
+      <h1>About Startup</h1>
+      <div id="startup">STARTUP NAME</div>
+      <mat-form-field id="startupinput">
+        <input matInput [formControl]="text" required>
+      </mat-form-field>
+      <div id="indsec">
+        <div id="ind">INDUSTRY <br>
+          <mat-form-field id="indinput">
+            <mat-select>
+              <mat-option *ngFor="let ind of industry" [value]="ind.value">
+                {{ind.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div id="sec">SECTOR <br>
+          <mat-form-field id="secinput">
+            <mat-select>
+              <mat-option *ngFor="let sec of sector" [value]="sec.value">
+                {{sec.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div id="stagetext">
+        <div id="stage">STAGE <br>
+          <mat-button-toggle-group id="stageinput" name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle value="ideation">Ideation</mat-button-toggle>
+            <mat-button-toggle value="validation">Validation</mat-button-toggle>
+            <mat-button-toggle value="earlytraction">Early Traction</mat-button-toggle>
+            <mat-button-toggle value="scaling">Scaling</mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+
+        <div class="text">ABOUT STARTUP<br><br>
+          <textarea id="textarea" matInput placeholder=""></textarea>
+        </div>
+      </div>
+      <mat-button-toggle-group id="stage2" name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle id="stage2a" value="bootstraped">Bootstraped</mat-button-toggle>
+        <mat-button-toggle id="stage2b" value="funded">Funded</mat-button-toggle>
+      </mat-button-toggle-group>
+      <div id="interests">INTERESTS</div>
+      <mat-checkbox class="example-margin" [checked]="allComplete" [color]="task.color" [indeterminate]="someComplete()"
+        (change)="setAll($event.checked)">
+        {{task.name}}
+      </mat-checkbox>
+
+      <li *ngFor="let subtask of task.subtasks">
+        <mat-checkbox [(ngModel)]="subtask.completed" [color]="subtask.color" (ngModelChange)="updateAllComplete()">
+          {{subtask.name}}
+        </mat-checkbox>
+      </li>
+
+      <button id="continue" routerLink='/contact'>Continue ></button>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
