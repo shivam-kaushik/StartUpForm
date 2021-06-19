@@ -75,15 +75,18 @@ export class ContactComponent implements OnInit {
     }
   ]
   
-onSelectfile(e: any) {
-  if (e.target.files) {
-    var reader = new FileReader();
-    reader.readAsDataURL(e.target.files[0]);
-    reader.onload = (event: any) => {
-      this.url = event.target.result;
-    };
+  url = '';
+  selectedValue: string | undefined;
+  myText: any | undefined;
+  onSelectfile(e: any) {
+    if (e.target.files) {
+      var reader = new FileReader();
+      reader.readAsDataURL(e.target.files[0]);
+      reader.onload = (event: any) => {
+        this.url = event.target.result;
+      };
+    }
   }
-}
   constructor() { }
 
   ngOnInit(): void {

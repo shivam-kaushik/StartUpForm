@@ -1,22 +1,32 @@
+.maincontainer{
+  background-color: #e6e5e5;  
+}
 .mycontainer{
   display: flex;
-  height: 680px;
-  width: 70%;
-  border-radius: 15px;
+  height: 770px;
+  width: 75%;
   border: 0px solid black;
   margin: auto;
-  margin-top: 35px;
-  margin-left: 230px;
-  box-shadow: 10px 10px 50px #b8b7b7;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-left: 180px;
+  background-color: #e6e5e5;
+  box-shadow:  25px -3px 10px #e6e5e5;
+}
+#sidecut{
+  display: flex;
+  height: 100.5%;
+  margin-top: -1.5px;
 }
 .mat-sidenav-container{
   width: 100%;
-  border-radius: 15px;
   font-family: 'Baloo Chettan 2', cursive;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .mat-sidenav{
   width: 200px;
-  background-color: rgb(105, 206, 149);
+  background-color: rgb(104,180,180);
 }
 .mat-sidenav-content{
   padding: 20px 40px;
@@ -34,18 +44,18 @@
   padding-top: 220px;
 }
 .dot1 {
-  height: 15px;
-  width: 15px;
-  background-color: rgb(167, 166, 166);
+  height: 10px;
+  width: 10px;
+  background-color: white;
   border-radius: 50%;
   display: flex;
   margin: auto;
   margin-bottom: 5px;
 }
 .dot2{
-  height: 15px;
-  width: 15px;
-  background-color: white;
+  height: 10px;
+  width: 10px;
+  background-color: rgb(209, 207, 207);
   border-radius: 50%;
   display: flex;
   margin: auto; 
@@ -53,31 +63,29 @@
 h1{
   font-size: 30px;
   font-family: 'Baloo Chettan 2', cursive;
-  color:rgb(88, 168, 123) ;
+  color:rgb(73, 122, 122) ;
   padding-top: 30px;
 }
 #img1{
   display: flex;
-  height: 50px;
-  width: 50px;
-  background-color: rgb(105, 206, 149);
+  height: 60px;
+  width: 60px;
   margin: auto;
   margin-top: 50px;
   cursor: pointer;
 }
 #img2{
   display: flex;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin: auto;
-  background-color: rgb(105, 206, 149);
   transform: rotate(180deg);
   margin-bottom: 50px;
   cursor: pointer;
   margin-top: 200px;  
 }
 #firstname{
-  font-size: large;
+  font-size: medium;
   padding-top: 10px;
 }
 #firstnameinput{
@@ -85,7 +93,7 @@ h1{
   font-size: 15px;
 }
 #lastname{
-  font-size: large;
+  font-size: medium;
   padding-top: 10px;
   padding-left: 40px;
 }
@@ -99,18 +107,84 @@ h1{
   width: 100%;
 }
 #submit{
-  float: right;
-  margin-right: 20px;
-  height: 34px;
-  border-radius: 20px;
-  background-color: rgb(88, 168, 123);
-  color: aliceblue;
-  margin-top: 92px;
+  margin-top: -28px;
   height: 35px;
   width: 80px;
+  float: right;
+  margin-right: 20px;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
+  background-color: white;
+  color: rgb(81, 153, 153);
+  font-size: 25px;
+  border: 2px solid rgb(81, 153, 153);
 }
 #logo{
-  font-size: large;
+  font-size: medium;
   padding-top: 10px;
   font-family: 'Baloo Chettan 2', cursive;
+}
+#pitch{
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: medium;
+}
+.wrapper {
+  position: relative;
+  height: 103px;
+  width: 160px;
+  border-radius: 10px;
+  color: #c2cdda;
+  font-size: 50px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapperO > p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  color: #888888;
+  margin-left: 10px;
+  width: 500px;
+}
+.content > p {
+  position: relative;
+}
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "+";
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }

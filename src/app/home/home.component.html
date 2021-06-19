@@ -1,20 +1,19 @@
+<div class="maincontainer">
 <div class="mycontainer">
+  <img id="sidecut" src="assets/side_cut_2.png" alt="">
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
-      <img id="img1" routerLink='/home' src="https://www.freeiconspng.com/uploads/black-circle-arrow-up-icon-31.png"
+      <img id="img1" routerLink='/home' src="assets/up_logo/2x/baseline_arrow_circle_up_white_36dp.png"
         alt="">
       <div id="circle">
         <span class="dot1"></span>
         <span class="dot2"></span>
       </div>
-      <img id="img2" routerLink='/contact' src="https://www.freeiconspng.com/uploads/black-circle-arrow-up-icon-31.png"
+      <img id="img2" routerLink='/contact' src="assets/up_logo/2x/baseline_arrow_circle_up_white_36dp.png"
         alt="">
     </mat-sidenav>
     <mat-sidenav-content>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh_sALHdEjpDivsXaPG52E3voex6HFkZZppMIuCvFeM390TNhHT-0Gp0GIzb9v0pT81M&usqp=CAU"
-        id="sidelogo" alt="">
-
+      <img src="assets/Incubator.png" id="sidelogo" alt="">
       <h1>About Startup</h1>
       <div id="startup">STARTUP NAME</div>
       <mat-form-field id="startupinput">
@@ -52,13 +51,16 @@
         </div>
 
         <div class="text">ABOUT STARTUP<br><br>
-          <textarea id="textarea" matInput placeholder=""></textarea>
+          <textarea id="textarea" [(ngModel)]="role"
+          [maxlength]="maxChars" matInput placeholder=""></textarea>
         </div>
       </div>
+      <!-- Characters Remaining: {{role.length}}/{{maxChars}} -->
       <mat-button-toggle-group id="stage2" name="fontStyle" aria-label="Font Style">
         <mat-button-toggle id="stage2a" value="bootstraped">Bootstraped</mat-button-toggle>
         <mat-button-toggle id="stage2b" value="funded">Funded</mat-button-toggle>
       </mat-button-toggle-group>
+      
       <div id="interests">INTERESTS</div>
       <mat-checkbox class="example-margin" [checked]="allComplete" [color]="task.color" [indeterminate]="someComplete()"
         (change)="setAll($event.checked)">
@@ -70,9 +72,26 @@
           {{subtask.name}}
         </mat-checkbox>
       </li>
+      <div id="myupload">
+      <h3 id="upload">LOGO</h3>
+        <div class="wrapperO" style="display: flex">
+          <button class="wrapper" onclick="defaultBtnActive()">
+            <div>
+              <img [src]="url" height="200" /> <br />
+              <input
+                type="file"
+                Class="custom-file-input"
+                (change)="onSelectfile($event)"
+              />
+            </div>
+          </button>        
+      </div>
+    </div>
+      <span id="remain">{{maxChars-role.length}}</span>
 
       <button id="continue" routerLink='/contact'>Continue ></button>
 
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
 </div>

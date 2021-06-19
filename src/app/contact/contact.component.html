@@ -1,19 +1,19 @@
-<div class="mycontainer">
-  <mat-sidenav-container>
-    <mat-sidenav mode="side" opened>
-      <img id="img1" routerLink='/home' src="https://www.freeiconspng.com/uploads/black-circle-arrow-up-icon-31.png"
-        alt="">
-      <div id="circle">
-        <span class="dot1"></span>
-        <span class="dot2"></span>
-      </div>
-      <img id="img2" routerLink='/contact' src="https://www.freeiconspng.com/uploads/black-circle-arrow-up-icon-31.png"
-        alt="">
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh_sALHdEjpDivsXaPG52E3voex6HFkZZppMIuCvFeM390TNhHT-0Gp0GIzb9v0pT81M&usqp=CAU"
-        id="sidelogo" alt="">
+<div class="maincontainer">
+  <div class="mycontainer">
+    <img id="sidecut" src="assets/side_cut_2.png" alt="">
+    <mat-sidenav-container>
+      <mat-sidenav mode="side" opened>
+        <img id="img1" routerLink='/home' src="assets/up_logo/2x/baseline_arrow_circle_up_white_36dp.png"
+          alt="">
+        <div id="circle">
+          <span class="dot1"></span>
+          <span class="dot2"></span>
+        </div>
+        <img id="img2" routerLink='/contact' src="assets/up_logo/2x/baseline_arrow_circle_up_white_36dp.png"
+          alt="">
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <img src="assets/Incubator.png" id="sidelogo" alt="">
       <h1>Contact Details</h1>
       <div id="firstlast">
         <div id="firstname">FIRST NAME <br>
@@ -72,15 +72,37 @@
         </div>
       </div>
 
-      <h2 id="logo">PITCH DECK</h2>
+      <!-- <h2 id="logo">PITCH DECK</h2>
       <button class="button1" onclick="defaultBtnActive()">
-        <div>
-          <img [src]="url" height="200" /> <br />
-          <input type="file" Class="custom-file-input" (change)="onSelectfile($event)" />
+        <div >
+          <img [src]="url" height="200"/> <br/>
+          <input id="myfile" type="file" Class="custom-file-input" (change)="onSelectfile($event)" />
         </div>
-      </button>
+      </button> -->
+
+      <h3 id="pitch">PITCH DECK</h3>
+      <div class="wrapperO" style="display: flex">
+        <button class="wrapper" onclick="defaultBtnActive()">
+          <div>
+            <img [src]="url" height="200" /> <br />
+            <input
+              type="file"
+              Class="custom-file-input"
+              (change)="onSelectfile($event)"
+            />
+          </div>
+        </button>
+        <div class="content">
+          <p>
+            Wondering about details to mention in the Pitch Deck! Take a look at
+            the Sample Pitch Deck.
+          </p>
+        </div>
+      </div>
+
 
       <button id="submit">Submit</button>
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
 </div>
