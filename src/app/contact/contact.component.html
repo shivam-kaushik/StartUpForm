@@ -16,31 +16,31 @@
         <img src="assets/Incubator.png" id="sidelogo" alt="">
       <h1>Contact Details</h1>
       <div id="firstlast">
-        <div id="firstname">FIRST NAME <br>
+        <div id="firstname"><span class="red">FIRST NAME</span><br>
           <mat-form-field id="firstnameinput">
             <input matInput [formControl]="text" required>
           </mat-form-field>
         </div>
-        <div id="lastname">LAST NAME <br>
+        <div id="lastname"><span class="red">LAST NAME </span><br>
           <mat-form-field id="lastnameinput">
             <input matInput [formControl]="text" required>
           </mat-form-field>
         </div>
       </div>
       <div id="firstlast">
-        <div id="firstname">EMAIL <br>
+        <div id="firstname"><span class="red">EMAIL</span> <br>
           <mat-form-field id="firstnameinput">
             <input matInput [formControl]="text" required>
           </mat-form-field>
         </div>
-        <div id="lastname">MOBILE <br>
+        <div id="lastname"><span class="red">MOBILE</span> <br>
           <mat-form-field id="lastnameinput">
             <input matInput [formControl]="text" required>
           </mat-form-field>
         </div>
       </div>
       <div id="firstlast">
-        <div id="firstname">STATE <br>
+        <div id="firstname"><span class="red">STATE</span> <br>
           <mat-form-field id="firstnameinput">
             <mat-select>
               <mat-option *ngFor="let state of states" [value]="state.value">
@@ -49,7 +49,7 @@
             </mat-select>
           </mat-form-field>
         </div>
-        <div id="lastname">CITY <br>
+        <div id="lastname"><span class="red">CITY</span> <br>
           <mat-form-field id="lastnameinput">
             <mat-select>
               <mat-option *ngFor="let city of cities" [value]="city.value">
@@ -72,14 +72,6 @@
         </div>
       </div>
 
-      <!-- <h2 id="logo">PITCH DECK</h2>
-      <button class="button1" onclick="defaultBtnActive()">
-        <div >
-          <img [src]="url" height="200"/> <br/>
-          <input id="myfile" type="file" Class="custom-file-input" (change)="onSelectfile($event)" />
-        </div>
-      </button> -->
-
       <h3 id="pitch">PITCH DECK</h3>
       <div class="wrapperO" style="display: flex">
         <button class="wrapper" onclick="defaultBtnActive()">
@@ -99,8 +91,6 @@
           </p>
         </div>
       </div>
-
-
       <button id="submit">Submit</button>
     </mat-sidenav-content>
   </mat-sidenav-container>

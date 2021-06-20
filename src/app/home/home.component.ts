@@ -80,6 +80,12 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+
+  checked = false;
+  indeterminate = false;
+  labelPosition: 'before' | 'after' = 'after';
+  disabled = false;
+
   task: Task = {
     name: 'All',
     completed: false,

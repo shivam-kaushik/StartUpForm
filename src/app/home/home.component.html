@@ -15,12 +15,12 @@
     <mat-sidenav-content>
       <img src="assets/Incubator.png" id="sidelogo" alt="">
       <h1>About Startup</h1>
-      <div id="startup">STARTUP NAME</div>
+      <div id="startup" class="colorsec">STARTUP NAME</div>
       <mat-form-field id="startupinput">
         <input matInput [formControl]="text" required>
       </mat-form-field>
       <div id="indsec">
-        <div id="ind">INDUSTRY <br>
+        <div id="ind"><span class="colorsec">INDUSTRY</span><br>
           <mat-form-field id="indinput">
             <mat-select>
               <mat-option *ngFor="let ind of industry" [value]="ind.value">
@@ -30,7 +30,7 @@
           </mat-form-field>
         </div>
 
-        <div id="sec">SECTOR <br>
+        <div id="sec"><span class="colorsec"> SECTOR</span> <br>
           <mat-form-field id="secinput">
             <mat-select>
               <mat-option *ngFor="let sec of sector" [value]="sec.value">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div id="stagetext">
-        <div id="stage">STAGE <br>
+        <div id="stage"><span class="colorsec">STAGE</span> <br>
           <mat-button-toggle-group id="stageinput" name="fontStyle" aria-label="Font Style">
             <mat-button-toggle value="ideation">Ideation</mat-button-toggle>
             <mat-button-toggle value="validation">Validation</mat-button-toggle>
@@ -50,28 +50,28 @@
           </mat-button-toggle-group>
         </div>
 
-        <div class="text">ABOUT STARTUP<br><br>
+        <div class="text"><span class="colorsec">ABOUT STARTUP</span><br><br>
           <textarea id="textarea" [(ngModel)]="role"
           [maxlength]="maxChars" matInput placeholder=""></textarea>
         </div>
       </div>
-      <!-- Characters Remaining: {{role.length}}/{{maxChars}} -->
       <mat-button-toggle-group id="stage2" name="fontStyle" aria-label="Font Style">
         <mat-button-toggle id="stage2a" value="bootstraped">Bootstraped</mat-button-toggle>
         <mat-button-toggle id="stage2b" value="funded">Funded</mat-button-toggle>
       </mat-button-toggle-group>
       
-      <div id="interests">INTERESTS</div>
-      <mat-checkbox class="example-margin" [checked]="allComplete" [color]="task.color" [indeterminate]="someComplete()"
+      <div id="interests"><span class="colorsec">INTERESTS</span> </div>
+      <mat-checkbox class="example-margin" [checked]="allComplete" [indeterminate]="someComplete()"
         (change)="setAll($event.checked)">
         {{task.name}}
       </mat-checkbox>
 
       <li *ngFor="let subtask of task.subtasks">
-        <mat-checkbox [(ngModel)]="subtask.completed" [color]="subtask.color" (ngModelChange)="updateAllComplete()">
+        <mat-checkbox [(ngModel)]="subtask.completed" (ngModelChange)="updateAllComplete()">
           {{subtask.name}}
         </mat-checkbox>
-      </li>
+      </li> 
+
       <div id="myupload">
       <h3 id="upload">LOGO</h3>
         <div class="wrapperO" style="display: flex">

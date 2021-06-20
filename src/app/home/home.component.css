@@ -135,6 +135,10 @@ li{
   margin-top: 10px;
 }
 #stage2a,#stage2b{
+  border-radius: 50px;
+  border: none;
+  transition: 0.8s;
+  margin: 3px
 }
 .text{
   display: flex;
@@ -182,6 +186,7 @@ li{
 .mat-button-toggle-checked{
   background-color: rgb(81, 153, 153);
   color: white;
+  transition: 0.4s;
 }
 #remain{
   display: flex;
@@ -261,4 +266,20 @@ li{
 }
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+  background-color: rgb(81, 153, 153) !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: rgb(81, 153, 153) !important;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: white !important;
+  border: 2px solid rgb(133, 132, 132);
+}
+.colorsec::after{
+  content: "*";
+  color: red;
 }
